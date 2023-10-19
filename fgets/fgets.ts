@@ -1,5 +1,4 @@
 import { load } from "./load_library.ts";
-import { NULL } from "../NULL/NULL.ts";
 
 /**
  * 
@@ -9,7 +8,7 @@ import { NULL } from "../NULL/NULL.ts";
 function fgets(buf: Uint8Array,n: number,fp: Deno.PointerValue<unknown>): Deno.PointerValue<unknown> {
   const { fgets, library} = load();
 
-  let result: Deno.PointerValue<unknown> =  NULL;
+  let result: Deno.PointerValue<unknown> =  null;
   try {
     result = fgets(buf, n, fp);
   } finally {

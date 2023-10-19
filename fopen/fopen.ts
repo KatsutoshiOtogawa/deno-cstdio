@@ -1,5 +1,4 @@
 import { load } from "./load_library.ts";
-import { NULL } from "../NULL/NULL.ts";
 
 /**
  * 
@@ -10,7 +9,7 @@ import { NULL } from "../NULL/NULL.ts";
 function fopen(filename: Uint8Array, mode: Uint8Array): Deno.PointerValue<unknown> {
     const { fopen, library} = load();
 
-    let fp: Deno.PointerValue = NULL;
+    let fp: Deno.PointerValue = null;
     try {
       fp = fopen(filename, mode);
     } finally {
