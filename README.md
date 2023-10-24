@@ -3,7 +3,7 @@
 clang stdio wrapper.
 
 ```ts
-import { malloc, free, mblen } from 'https://deno.land/x/cstdio@v0.0.3/mod.ts';
+import { malloc, free, mblen } from 'https://deno.land/x/cstdio@v0.0.4/mod.ts';
 // or import { malloc } from 'https://deno.land/x/cstdlib/@0.0.3/malloc/malloc.ts';
 // or import { free } from 'https://deno.land/x/cstdlib/@0.0.3/free/free.ts';
 // or import { mblen } from 'https://deno.land/x/cstdlib/@0.0.3/mblen/mblen.ts';
